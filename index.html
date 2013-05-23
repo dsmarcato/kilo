@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>Kilo - Diego Marcato!</title>
+
+<link type="text/css" rel="stylesheet" media="screen" href="inc/js/jqtouch/jqtouch.css">
+<link type="text/css" rel="stylesheet" media="screen" href="inc/js/themes/jqt/theme.css">
+<link type="text/css" rel="stylesheet" media="screen" href="inc/css/style.css">
+
+<script type="text/javascript" src="phonegap.js"></script>
+<script type="text/javascript" src="inc/js/jqtouch/jquery.js"></script>
+<script type="text/javascript" src="inc/js/jqtouch/jqtouch.js"></script>
+<script type="text/javascript" src="inc/js/script.js"></script>
+
+</head>
+
+<body>
+
+	<div id="home">
+		<div class="toolbar">
+			<h1>Kilo</h1>
+			<a class="button slideup" href="#config">Config.</a>
+		</div>	
+		<ul class="edgetoedge">
+			<li class="arrow"><a href="#datas">Datas</a></li>
+			<li class="arrow"><a href="#teste1">Teste</a></li>
+			<li class="arrow"><a href="#sobre">Sobre</a></li>
+		</ul>		
+	</div>
+	<div id="sobre">
+		<div class="toolbar">
+			<h1>About</h1>
+			<a class="button back" href="#">Voltar</a>
+		</div>
+		<div>
+			<p>Desenvolvido para acompanhamento de Quilos, consumidos ao longo do dia!</p>
+		</div>	
+	</div>	
+	
+	<div id="teste1">
+		<div class="toolbar">
+			<h1>Teste 1</h1>
+			<a class="button back" href="#">Voltar</a>
+		</div>
+		<div>
+			<p>n&atilde;o p&ocirc;de ser encontrado porque a busca DNS falhou. DNS &eacute; o servi&ccedil;o da web que converte o nome de um website em seu endere&ccedil;o na Internet. Na maioria dos casos, este erro &eacute; causado quando n&atilde;o h&aacute; conex&atilde;o &agrave; Internet ou quando a rede &eacute; mal configurada. O erro tamb&eacute;m pode ser causado por aus&ecirc;ncia de resposta do servidor DNS ou por um firewall que impe&ccedil;a&nbsp;&nbsp;de acessar a reden</p>
+	  </div>	
+	</div>		
+
+
+	<div id="datas">
+		<div class="toolbar">
+			<h1>Datas</h1>
+			<a class="button back" href="#">Voltar</a>
+		</div>
+		<ul class="edgetoedge">
+			<li class="arrow"><a id="0" href="#data">Hoje</a></li>
+			<li class="arrow"><a id="1" href="#data">Ontem</a></li>
+			<li class="arrow"><a id="2" href="#data">D-2</a></li>
+			<li class="arrow"><a id="3" href="#data">D-3</a></li>
+			<li class="arrow"><a id="4" href="#data">D-4</a></li>
+			<li class="arrow"><a id="5" href="#data">D-5</a></li>
+			<li class="forward">
+				<form method="post">
+				<ul class="rounded">
+				 <li> <input name="odt" type="text" id="odt" size="15" maxlength="10" placeholder="Outra Data" /></li>
+				 <!--<li> <a href="#" onclick="$(this).parents('form').submit();">Ver</a> </li>-->
+				 <li><input type="submit" name="salvar" id="salvar" value="Ver" /></li>
+				 </ul> 
+				  
+				</form>
+			</li>
+			<!--<a id="x" href="#outra_data">Outra Data</a></li>-->				
+		</ul>		
+	</div>
+		
+	<div id="data">
+		<div class="toolbar">
+			<h1>Data</h1>
+			<a class="button back" href="#">Voltar</a>
+			<a class="button slideup" href="#novaEntrada">Novo</a>
+		</div>
+		<ul class="edgetoedge">
+			<li id="template" class="entry" style="display:none;">
+				<span class="label">Label</span>
+				<span class="calorias">000</span>
+				<span class="delete">&nbsp;&nbsp;X&nbsp;&nbsp;</span>
+			</li>			
+		</ul>			
+	</div>	
+	
+	<div id="novaEntrada">
+		<div class="toolbar">
+			<h1>Novo</h1>
+			<a class="button cancel" href="#">Cancelar</a>
+		</div>
+		<form method="post">
+			<ul class="rounded">
+				<li> <input type="text" placeholder="Alimento" name="alimento" id="alimento" /> </li>
+				<li> <input type="number" placeholder="Calorias" name="calorias" id="calorias" /> </li>
+				<li> <input type="submit" class="submit" name="salvar" id="salvar" value="Salvar" /> </li>
+			</ul>
+		</form>
+	</div>	
+	
+		<div id="config">
+		<div class="toolbar">
+			<h1>Config.</h1>
+			<a class="button cancel" href="#">Cancelar</a>
+		</div>
+		<form method="post">
+			<ul class="rounded">
+				<li> <input type="number" placeholder="idade" name="idade" id="idade" /> </li>
+				
+				<li> <input type="number" placeholder="Peso" name="peso" id="peso" /> </li>
+				<li> <input type="number" placeholder="Or&ccedil;amento" name="orc" id="orc" /> </li>
+				<li> <input type="submit" class="submit" name="salvar" id="salvar" value="Salvar" /> </li>
+			</ul>
+		</form>
+	</div>	
+	
+	
+	
+	
+</body>
+</html>
